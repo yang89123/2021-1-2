@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+.full-screen{
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:rgba(240,255,240,0.6);
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+.close{
+  position:absolute;
+  top:0;
+ right:0;
+}
+
+p{
+ color:blue;
+ margin:10px;
+ cursor:pointer;
+}
+p:hover{
+ background:pink;
+
+}
+</style>
+</head>
+<body>
+
+<p>商標</p>
+<h1>強尼玩咖in藏心</h1>
+這間咖啡廳隱身在聯合大學校本部周邊的「陽明山莊社區」內，裡頭有隨興又健談的老闆，還有藝術感十足的彩繪咖啡，來到這邊喝下午茶就好像到朋友家做客那樣，相當自在舒適，是一間有著滿滿人情味的咖啡廳。
+<h2>藏心</h2>
+你來到這邊就把心藏在這裡，你走了以後老闆會把你藏在心裡
+<h3></3>
+這間「強尼玩咖in藏心」是間充滿人情味的咖啡廳，老闆走Free Style路線，個性隨興、幽默又健談，因為不限制用餐時間，可以悠閒地在這邊待上一整天！只要你找的到這間店、確定老闆人在店裡，你都可以喝到強尼老闆的咖啡喔！絕對會讓想要放鬆的朋友得到身心靈的滿足！
+<h4>「強尼玩咖in藏心」店家資訊</h4>
+
+<p>▋地址：苗栗市水源里25鄰陽明114號</p>
+
+<p>▋電話：0976-160949(一定要電話預約,不然直接前往可能會撲空)</p>
+
+<p>▋營業時間：08:00-22:00(不定休,見店家粉絲團公告)</p>
+
+<p>▋官方臉書：：<span style="color: #000000;"><a style="color: #000000;" href="https://www.facebook.com/Johnnymen1969/"target="_blank">點我看店家粉絲團</a></span></p>
+
+<p>▋備註：主餐類需要提前一天預約，店內有插座，不限制用餐時間。</p>
+<div class="full-screen" align=center >
+  <img src="01.jpg" >
+  <button class="close">
+<input type="button" value="關閉" name="按鈕名稱" style="width:120px;height:40px;background-color:#FF0000">
+
+</button>
+</div>
+<script>
+$("p").click(function(){
+ $(".full-screen").slideToggle();
+});
+// $("img").click(function(){
+//  $(".full-screen").slideToggle();
+// });
+$("button").click(function(){
+ $(".full-screen").slideToggle();
+});
+</script>
+</body>
+</html>
